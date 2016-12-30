@@ -21,6 +21,8 @@
 
 	require 'library/Request.php';
 	require 'library/Inflector.php';
+	require 'library/Response.php';
+	require 'library/View.php';
 
 // Llamar al controlador indicado
 
@@ -36,8 +38,9 @@
 //Instanciar la clase Recien declarada
 
 	$request = new Request($url);
+	$request->execute();
 
-	var_dump($request->getActionMethodName());
+	//var_dump($request->getParams());
 
 //	controller($_GET['url']);
 	
