@@ -4,6 +4,7 @@
 	{
 		public function indexAction()
 		{
+			return new View('contactos'); 
 
 		}
 
